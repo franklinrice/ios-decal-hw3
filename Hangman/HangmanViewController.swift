@@ -9,9 +9,23 @@
 import UIKit
 
 class HangmanViewController: UIViewController {
-
+    
+    @IBOutlet weak var successfulLabel: UILabel!
+    @IBOutlet weak var unsuccessfulLabel: UILabel!
+    @IBOutlet weak var unsuccessfulGuesses: UILabel!
+    @IBOutlet weak var guessButton: UIButton!
+    @IBOutlet weak var guess: UITextField!
+    @IBOutlet weak var successfulGuesses: UILabel!
+    @IBOutlet weak var image: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        image.layer.cornerRadius = 15
+        unsuccessfulGuesses.layer.cornerRadius = 10
+        successfulGuesses.layer.cornerRadius = 10
+        successfulLabel.layer.cornerRadius = 10
+        unsuccessfulLabel.layer.cornerRadius = 10
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
